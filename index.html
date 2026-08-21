@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Technische Vorschau</title>
+<style>
+  :root {
+    --grund: #fbfbfa;
+    --text: #1c1b19;
+    --gedaempft: #6b6862;
+    --linie: #e3e0da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --grund: #171614;
+      --text: #ecebe7;
+      --gedaempft: #96928a;
+      --linie: #302e2a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1.5rem;
+    background: var(--grund);
+    color: var(--text);
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  main { max-width: 34rem; width: 100%; }
+  .marke {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gedaempft);
+    margin: 0 0 1.75rem;
+  }
+  h1 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    line-height: 1.25;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    letter-spacing: -0.015em;
+  }
+  p { margin: 0 0 1rem; }
+  .gedaempft { color: var(--gedaempft); }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--linie);
+    margin: 2rem 0 1.25rem;
+  }
+  dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.4rem 1.25rem;
+    font-size: 0.875rem;
+  }
+  dt { color: var(--gedaempft); }
+  dd { margin: 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="marke">stillwater-works</p>
+
+  <h1>Technische Vorschau</h1>
+
+  <p>Diese Seite prüft, ob die Veröffentlichungskette funktioniert — vom erzeugten Dateisatz über die Versionsverwaltung bis zur Auslieferung.</p>
+
+  <p class="gedaempft">Sie enthält keine Inhalte und richtet sich an niemanden. Von Suchmaschinen ist sie ausgeschlossen.</p>
+
+  <hr>
+
+  <dl>
+    <dt>Zweck</dt>
+    <dd>Funktionsnachweis</dd>
+    <dt>Indexierung</dt>
+    <dd><code>noindex, nofollow</code></dd>
+    <dt>Datenerhebung</dt>
+    <dd>keine</dd>
+  </dl>
+</main>
+</body>
+</html>
