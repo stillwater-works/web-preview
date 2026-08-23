@@ -1,4 +1,4 @@
-# lp-web-preview-v1 – Preview (noindex)
+# web-preview – Preview (noindex)
 
 > Statische Landingpage als Vorschau auf GitHub Pages.
 
