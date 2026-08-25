@@ -23,14 +23,12 @@
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 4rem;
     background: var(--grund);
     color: var(--text);
     font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     display: flex;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh;
   }
   main { max-width: 34rem; width: 100%; }
   .marke {
@@ -47,6 +45,17 @@
     margin: 0 0 1rem;
     letter-spacing: -0.015em;
   }
+  h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem;
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.4rem;
+  }
   p { margin: 0 0 1rem; }
   .gedaempft { color: var(--gedaempft); }
   hr {
@@ -58,14 +67,34 @@
     margin: 0;
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 0.4rem 1.25rem;
-    font-size: 0.875rem;
+    gap: 0.4rem 1.5rem;
+    font-size: 0.9rem;
   }
   dt { color: var(--gedaempft); }
   dd { margin: 0; }
   code {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    font-size: 0.9em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.85em;
+  }
+  section.recht {
+    margin-top: 2.5rem;
+    font-size: 0.9rem;
+  }
+  section.recht p { margin: 0 0 0.8rem; }
+  section.recht ul {
+    margin: 0 0 0.8rem;
+    padding-left: 1.2rem;
+  }
+  section.recht li { margin-bottom: 0.25rem; }
+  address {
+    font-style: normal;
+    margin: 0 0 0.8rem;
+  }
+  a { color: inherit; }
+  .stand {
+    margin-top: 2.5rem;
+    font-size: 0.8rem;
+    color: var(--gedaempft);
   }
 </style>
 </head>
@@ -89,6 +118,146 @@
     <dt>Datenerhebung</dt>
     <dd>keine</dd>
   </dl>
+
+  <section class="recht" id="impressum">
+    <hr>
+
+    <h2>Impressum</h2>
+
+    <p class="gedaempft">Angaben nach § 5 Digitale-Dienste-Gesetz (DDG).</p>
+
+    <h3>Anbieter</h3>
+
+    <address>
+      Robert Konrad<br>
+      Gießener Straße 1<br>
+      35641 Schöffengrund<br>
+      Deutschland
+    </address>
+
+    <h3>Kontakt</h3>
+
+    <p>
+      E-Mail: <a href="mailto:ceo@aurelius-holding.de">ceo@aurelius-holding.de</a>
+    </p>
+
+    <h3>Rechtsform</h3>
+
+    <p>
+      Diese Seite wird von einer natürlichen Person betrieben. Es besteht keine
+      Handelsregistereintragung; eine Umsatzsteuer-Identifikationsnummer nach
+      § 27 a Umsatzsteuergesetz liegt nicht vor.
+    </p>
+
+    <h3>Verbraucherstreitbeilegung</h3>
+
+    <p>
+      Diese Seite bietet keine Waren oder Dienstleistungen an und schließt keine
+      Verträge. Zur Teilnahme an einem Streitbeilegungsverfahren vor einer
+      Verbraucherschlichtungsstelle besteht weder eine Verpflichtung noch eine
+      Bereitschaft.
+    </p>
+  </section>
+
+  <section class="recht" id="datenschutz">
+    <hr>
+
+    <h2>Datenschutzhinweise</h2>
+
+    <p class="gedaempft">Informationen nach Artikel 13 DSGVO.</p>
+
+    <h3>Verantwortlicher</h3>
+
+    <address>
+      Robert Konrad<br>
+      Gießener Straße 1<br>
+      35641 Schöffengrund<br>
+      Deutschland<br>
+      <a href="mailto:ceo@aurelius-holding.de">ceo@aurelius-holding.de</a>
+    </address>
+
+    <p>
+      Ein Datenschutzbeauftragter ist nicht bestellt; die Voraussetzungen des
+      § 38 Bundesdatenschutzgesetz liegen nicht vor.
+    </p>
+
+    <h3>Was diese Seite nicht tut</h3>
+
+    <p>
+      Sie enthält keine Formulare und nimmt keine Eingaben entgegen. Sie setzt
+      keine Cookies und verwendet weder Reichweitenmessung noch Analysewerkzeuge,
+      Einbindungen Dritter oder Schriftarten von fremden Servern. Es findet kein
+      Profiling und keine automatisierte Entscheidungsfindung statt.
+    </p>
+
+    <h3>Was beim Aufruf geschieht</h3>
+
+    <p>
+      Die Seite wird über GitHub Pages ausgeliefert, einen Dienst der GitHub,
+      Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim
+      Abruf verarbeitet GitHub technisch notwendige Verbindungsdaten,
+      insbesondere die IP-Adresse des anfragenden Geräts, Datum und Uhrzeit,
+      die angeforderte Datei sowie übermittelte Browser- und Betriebssystemangaben.
+      Diese Verarbeitung geschieht durch GitHub; der Verantwortliche erhält
+      keinen Zugriff auf diese Daten und wertet sie nicht aus.
+    </p>
+
+    <p>
+      Rechtsgrundlage ist Artikel 6 Absatz 1 Buchstabe f DSGVO. Das berechtigte
+      Interesse liegt im technisch fehlerfreien Betrieb und in der Sicherheit
+      der Auslieferung.
+    </p>
+
+    <h3>Übermittlung in die USA</h3>
+
+    <p>
+      Mit dem Abruf werden Daten in die Vereinigten Staaten übermittelt. GitHub,
+      Inc. ist nach dem EU-US Data Privacy Framework zertifiziert; die
+      Übermittlung stützt sich auf den Angemessenheitsbeschluss der Europäischen
+      Kommission vom 10. Juli 2023, hilfsweise auf Standardvertragsklauseln.
+      Weitere Angaben enthält die Datenschutzerklärung von GitHub unter
+      <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">docs.github.com</a>.
+    </p>
+
+    <h3>Speicherdauer</h3>
+
+    <p>
+      Der Verantwortliche speichert keine personenbezogenen Daten aus dem Abruf
+      dieser Seite. Für die Speicherdauer der Verbindungsdaten bei GitHub gelten
+      deren Angaben.
+    </p>
+
+    <h3>Ihre Rechte</h3>
+
+    <p>Ihnen stehen gegenüber dem Verantwortlichen die folgenden Rechte zu:</p>
+
+    <ul>
+      <li>Auskunft über die verarbeiteten Daten (Artikel 15 DSGVO)</li>
+      <li>Berichtigung unrichtiger Daten (Artikel 16 DSGVO)</li>
+      <li>Löschung (Artikel 17 DSGVO)</li>
+      <li>Einschränkung der Verarbeitung (Artikel 18 DSGVO)</li>
+      <li>Datenübertragbarkeit (Artikel 20 DSGVO)</li>
+      <li>Widerspruch gegen die Verarbeitung (Artikel 21 DSGVO)</li>
+    </ul>
+
+    <p>
+      Unabhängig davon steht Ihnen ein Beschwerderecht bei einer
+      Aufsichtsbehörde zu (Artikel 77 DSGVO). Zuständig ist am Sitz des
+      Verantwortlichen der Hessische Beauftragte für Datenschutz und
+      Informationsfreiheit, Postfach 3163, 65021 Wiesbaden.
+    </p>
+
+    <h3>Änderungen</h3>
+
+    <p>
+      Ändert sich der Funktionsumfang dieser Seite — etwa durch ein Formular
+      oder eine Anmeldung zu einer Liste —, werden diese Hinweise vorher
+      angepasst. Bis dahin beschreiben sie den vollständigen Umfang der
+      Verarbeitung.
+    </p>
+  </section>
+
+  <p class="stand">Stand: 25. August 2026</p>
 </main>
 </body>
 </html>
